@@ -20,12 +20,5 @@ class Solution(object):
             # '//' functions consistently across versions.
             bucket_id = num // width
             
-            # Scenario 1: Two numbers fall into the absolute same bucket
-            if bucket_id in buckets:
-                return True
-                
-            # Scenario 2: Check the left adjacent bucket
-            if (bucket_id - 1) in buckets and abs(num - buckets[bucket_id - 1]) <= t:
-                return True
-                
+        
           
