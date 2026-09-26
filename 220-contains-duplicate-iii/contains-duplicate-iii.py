@@ -5,13 +5,7 @@ class Solution(object):
         :type k: int
         :type t: int
         :rtype: bool
-        """
-        # Edge cases: t cannot be negative, k must be positive
-        if t < 0 or k <= 0:
-            return False
-            
-        buckets = {}
-       
+      
             
         
           
