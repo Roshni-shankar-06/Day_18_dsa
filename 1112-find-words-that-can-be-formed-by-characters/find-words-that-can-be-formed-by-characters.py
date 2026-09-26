@@ -7,7 +7,4 @@ class Solution(object):
             for char in word:
                 if word.count(char) > chars.count(char):
                     possible = False
-                    break
-            if possible:
-                ans += len(word)
-        return ans
+                 
