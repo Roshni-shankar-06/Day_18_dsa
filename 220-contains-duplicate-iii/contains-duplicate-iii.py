@@ -28,12 +28,4 @@ class Solution(object):
             if (bucket_id - 1) in buckets and abs(num - buckets[bucket_id - 1]) <= t:
                 return True
                 
-            # Scenario 3: Check the right adjacent bucket
-            if (bucket_id + 1) in buckets and abs(num - buckets[bucket_id + 1]) <= t:
-                return True
-                
-            # Place the current number into its corresponding bucket
-            buckets[bucket_id] = num
-            
-            # Maintain the sliding window size of k
-         
+          
