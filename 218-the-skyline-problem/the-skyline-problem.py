@@ -25,10 +25,4 @@ class Solution(object):
             # If it's a building start event, add to heap
             if neg_h < 0:
                 heapq.heappush(hp, (neg_h, r))
-                
-            # If the maximum height has changed, record the critical point
-            curr_max_height = -hp[0][0]
-            if res[-1][1] != curr_max_height:
-                res.append([x, curr_max_height])
-                
-        return res[1:]
+         
