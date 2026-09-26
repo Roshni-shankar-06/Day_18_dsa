@@ -11,12 +11,5 @@ class Solution(object):
             
         # Sort events by x coordinate. 
         # If x matches, process larger heights/start events first.
-        events.sort()
-        
-        # Result list and min-heap to act as a max-heap (storing [-height, right])
-        res = [[0, 0]]
-        hp = [(0, float('inf'))]
-        
-        for x, neg_h, r in events:
-         
+      
          
