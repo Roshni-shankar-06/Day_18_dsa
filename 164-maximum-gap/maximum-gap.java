@@ -21,13 +21,4 @@ class Solution {
         java.util.Arrays.fill(maxBucket, Integer.MIN_VALUE);
 
         // Distribute numbers into buckets
-        for (int num : nums) {
-            int idx = (num - min) / bucketSize;
-            minBucket[idx] = Math.min(minBucket[idx], num);
-            maxBucket[idx] = Math.max(maxBucket[idx], num);
-        }
-
-        // Find the maximum gap between buckets
-        int maxGap = 0;
-        int previousMax = min;
-        
+     
