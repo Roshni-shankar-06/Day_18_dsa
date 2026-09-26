@@ -9,9 +9,5 @@ class Solution:
     n = len(s)
 
     while i < n:
-      if s[i] == '(':
-        # Find the closing bracket
-        j = i + 1
-        while j < n and s[j] != ')':
-          j += 1
+    
     
