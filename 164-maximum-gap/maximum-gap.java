@@ -30,14 +30,4 @@ class Solution {
         // Find the maximum gap between buckets
         int maxGap = 0;
         int previousMax = min;
-        for (int i = 0; i < bucketCount; i++) {
-            if (minBucket[i] == Integer.MAX_VALUE) {
-                continue; // Empty bucket
-            }
-            maxGap = Math.max(maxGap, minBucket[i] - previousMax);
-            previousMax = maxBucket[i];
-        }
-
-        return maxGap;
-    }
-}
+        
