@@ -36,8 +36,4 @@ class Solution(object):
             buckets[bucket_id] = num
             
             # Maintain the sliding window size of k
-            if i >= k:
-                old_bucket_id = nums[i - k] // width
-                del buckets[old_bucket_id]
-                
-        return False
+         
