@@ -18,11 +18,5 @@ class Solution(object):
         hp = [(0, float('inf'))]
         
         for x, neg_h, r in events:
-            # Remove buildings from heap that have already ended before current x
-            while hp[0][1] <= x:
-                heapq.heappop(hp)
-                
-            # If it's a building start event, add to heap
-            if neg_h < 0:
-                heapq.heappush(hp, (neg_h, r))
+         
          
