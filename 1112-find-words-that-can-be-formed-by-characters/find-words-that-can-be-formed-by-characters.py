@@ -3,8 +3,4 @@ class Solution(object):
         ans = 0
         # Count frequencies of characters in chars using standard dictionary or count method
         for word in words:
-            possible = True
-            for char in word:
-                if word.count(char) > chars.count(char):
-                    possible = False
-                 
+        
