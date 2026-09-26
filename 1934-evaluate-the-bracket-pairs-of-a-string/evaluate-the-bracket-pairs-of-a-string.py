@@ -14,8 +14,4 @@ class Solution:
         j = i + 1
         while j < n and s[j] != ')':
           j += 1
-        # Extract the key
-        key = s[i + 1 : j]
-        # Append corresponding value or '?'
-        ans.append(mapping.get(key, '?'))
     
