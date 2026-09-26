@@ -11,14 +11,7 @@ class Solution(object):
             return False
             
         buckets = {}
-        # The width of each bucket is t + 1
-        width = t + 1
-        
-        for i, num in enumerate(nums):
-            # In Python 2, integer division handles rounding towards negative infinity 
-            # naturally for positive integers. For negative numbers, floor division 
-            # '//' functions consistently across versions.
-            bucket_id = num // width
+       
             
         
           
