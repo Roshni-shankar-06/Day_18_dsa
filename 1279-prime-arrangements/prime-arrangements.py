@@ -8,9 +8,3 @@ class Solution:
         fact = fact * i % MOD
       return fact
 
-    count = self._countPrimes(n)
-    return factorial(count) * factorial(n - count) % MOD
-
-  def _countPrimes(self, n: int) -> int:
-    isPrime = [False] * 2 + [True] * (n - 1)
-   
