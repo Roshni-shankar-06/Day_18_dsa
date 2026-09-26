@@ -18,9 +18,4 @@ class Solution:
         key = s[i + 1 : j]
         # Append corresponding value or '?'
         ans.append(mapping.get(key, '?'))
-        i = j + 1
-      else:
-        ans.append(s[i])
-        i += 1
-
-    return ''.join(ans)
+    
